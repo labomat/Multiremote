@@ -17,7 +17,7 @@
  * 2x analog in
  * 6x digital in / 8 x digital in possible
  * 
- * Written by Kai Laborenz with the help of all the beautifull examples out there
+ * Written by Kai Laborenz with the help of all the beautiful examples out there
  * This is Open Source: GNU GPL v3 https://choosealicense.com/licenses/gpl-3.0/
  * 
  **************************************************************************************/
