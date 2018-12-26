@@ -17,7 +17,7 @@
  * 2x analog in
  * 6x digital in / 8 x digital in possible
  * 
- * Written by Kai Laborenz with the help of all the beautiful examples out there
+ * Written by Kai Laborenz with the help of all the beautifull examples out there
  * This is Open Source: GNU GPL v3 https://choosealicense.com/licenses/gpl-3.0/
  * 
  **************************************************************************************/
@@ -49,6 +49,8 @@ void setup() {
   Wire.begin(i2c_slave_address);    // join i2c as a slave
   Wire.onRequest(sendData);         // when the Master makes a request, run this function
   Serial.println(" Start ");
+  
+  u8g2.begin(/*Select=*/ 0, /*Right/Next=*/ 1, /*Left/Prev=*/ 2, /*Up=*/ 4, /*Down=*/ 3, /*Home/Cancel=*/ A6); 
 
   // set D2 - D9 as input for switches
   for(int i=0; i<7; i++){
